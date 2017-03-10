@@ -1,0 +1,19 @@
+var mysql = require('mysql');
+var connection = mysql.createConnection({
+  host     : 'localhost',
+  user     : 'root',
+  password : '123456',
+  database : 'myapp'
+});
+
+//connection.connect();
+exports.index = function (sql, callback) {
+    callback = callback || function(){};
+    connection.query(sql, function (err, result) {
+        if (err) throw err;
+        if (err === null) {
+            callback(result);
+        }
+    });
+}
+console.log('数据库连接成功');

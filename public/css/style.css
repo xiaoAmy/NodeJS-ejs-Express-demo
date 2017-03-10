@@ -1,0 +1,7 @@
+html,body{margin:0;padding:0;font-family:'Microsoft YaHei';font-size:16px;}
+p{width:1200px;margin:0 auto;height:45px;line-height:45px;text-align: center;font-size: 18px;}
+table{width:1200px;margin:0 auto;border-right:1px solid #ccc;border-bottom:1px solid #ccc}
+table tr td{height:45px;line-height:45px;text-align:center;border-left:1px solid #ccc;border-top:1px solid #ccc}
+.form-control{width: 300px;height: 30px;border: 1px solid #ccc;text-indent: 18px;margin-left: 20px;}
+.tl{text-align: left !important;}
+.btn{width: 150px;height: 30px;font-size: 15px;font-family:'Microsoft YaHei';margin-left: 20px;}

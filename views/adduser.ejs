@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>添加用户页面</title>
+        <link rel='stylesheet' href='/css/style.css'/>
+</head>
+<body>
+	<p>用户管理</p>
+	<table border="0" cellspacing="0" cellpadding="0">
+	  <% if(typeof(valueid)!='undefined'){ %>
+		<form action="/edituser/<%=valueid%>" method="post" id='myform'>
+			<tr><td>用户名</td><td class='tl'><input name="user" type="text" class="form-control" placeholder="请输入用户名"></td></tr>
+        	<tr><td>密码</td><td class='tl'><input name="password" type="password" class="form-control" placeholder="请输入密码"></td></tr>
+        	<tr><td></td><td class='tl'><button type="submit" class="btn">提交</button></td></tr>
+    	</form>
+       <% } else { %>
+		<form action="/adduser" method="post" id='myform'>
+			<tr><td>用户名</td><td class='tl'><input name="user" type="text" class="form-control" placeholder="请输入用户名"></td></tr>
+        	<tr><td>密码</td><td class='tl'><input name="password" type="password" class="form-control" placeholder="请输入密码"></td></tr>
+        	<tr><td></td><td class='tl'><button type="submit" class="btn">提交</button></td></tr>
+    	</form>
+       <% } %>
+	</table>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+<head>
+	<title>用户详情页</title>
+        <link rel='stylesheet' href='/css/style.css'/>
+</head>
+<body>
+	<p>用户详情</p>
+	<table border="0" cellspacing="0" cellpadding="0">
+        <tr><td>用户名</td><td>密码</td></tr>
+        <tr><td><%=userdetail.user_n%></td><td><%=userdetail.user_p %></td></tr>
+		<tr><td><a href="/edituser/<%=userdetail.user_id %>">修改</a></td><td><a href="/deluser/<%=userdetail.user_id %>">删除</a></td></tr>
+    </table>
+</body>
+</html>
+

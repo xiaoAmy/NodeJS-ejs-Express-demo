@@ -1,0 +1,15 @@
+<html>
+<head>
+	<title>用户列表页</title>
+        <link rel='stylesheet' href='/css/style.css'/>
+</head>
+<body>
+	<p>用户管理</p>
+	<table border="0" cellspacing="0" cellpadding="0">
+        <tr><td>用户名</td><td>密码</td><td><a href="/adduser">添加用户</a></td></tr>
+        <% userlist.forEach(function(value){ %>
+	        <tr><td><%= value['user_n'] %></td><td><%= value['user_p'] %></td><td><a href="/user/<%=value['user_id']%>">查看</a></td></tr>
+        <% }) %>
+	</table>
+</body>
+</html>
