@@ -28,7 +28,7 @@ app.get('/edituser/:id',function(req,res){
 	res.render('adduser',{valueid:req.params.id});
 });
 app.post('/edituser/:id',user.edituser);
-// 监听端口
+// 监听端口l
 app.listen(port, function () {
   console.log('myapp started on port'+port);
 });
